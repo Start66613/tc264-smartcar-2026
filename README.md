@@ -49,6 +49,7 @@ docs/
   04_版本全史.md          ← 198 个版本的演进脉络与关键版本
   05_数据资产.md          ← 15 轮跑车记录、存帧、怎么读
   06_工程方法论.md        ← 影子验证/四门禁/归档闭环 的完整流程
+  07_下载与校验.md        ← Release 分卷下载、合并、SHA256
   original/               ← 当时写的 18 份专题文档（未删改）
   TC264固件工作流_SKILL.md ← 可复用的操作手册
 
@@ -56,16 +57,31 @@ source/
   TC264_VisionTrack/      ← 比赛固件源码（v146 状态）
   TC264_RCManual/         ← 遥控娱乐固件源码
 
+reports/                  ← 61 份数据分析报告（含全部失败分析）
+
 versions/
   manifest.csv            ← 198 个版本包清单（SHA256/大小/来源）
-  VisionTrack/ …          ← 每个版本抽取出的源码（可直接 diff）
+  README.md               ← 版本目录说明
   INDEX_原始.md           ← 当时的版本索引
 
 scripts/                  ← 构建/校验/烧录/回读/测试 全套工具
-reports/                  ← 61 份数据分析报告（含失败分析）
 logs/                     ← 烧录与构建的可验证记录
 hardware/                 ← 引脚表与硬件设计说明
 ```
+
+## 📦 完整归档下载（198 个原始版本包 / 454 MB）
+
+仓库里是**可浏览的源码与文档**；每个版本的**完整工程**（含逐飞库、可直接编译）在 Release：
+
+**➡️ [Release v1.0-archive](https://github.com/Start66613/tc264-smartcar-2026/releases/tag/v1.0-archive)**
+
+| 文件 | 大小 | 内容 |
+|---|---:|---|
+| `01_docs_reports.zip` | 13.2 MB | 全部文档 + 61 份报告 |
+| `02_source_and_toolchain.zip` | 1.0 MB | 当前源码 + 工具链 + 日志 |
+| `03_versions_all.zip.01~06` | 454 MB | **198 个原始版本包** |
+
+合并与校验方法见 [`docs/07_下载与校验.md`](docs/07_下载与校验.md)。
 
 ## 三句话总结
 
