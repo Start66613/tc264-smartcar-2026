@@ -79,7 +79,8 @@ hardware/                 ← 引脚表与硬件设计说明
 |---|---:|---|
 | `01_docs_reports.zip` | 13.2 MB | 全部文档 + 61 份报告 |
 | `02_source_and_toolchain.zip` | 1.0 MB | 当前源码 + 工具链 + 日志 |
-| `03_versions_all.zip.01~06` | 454 MB | **198 个原始版本包** |
+| `03_versions_all.zip.01~06` | 454 MB | **198 个原始版本包**（完整工程，可直接编译） |
+| `04_versions_source_extracted.zip` | 10 MB | **每版本抽取的纯源码**（4243 个文件，可直接 diff） |
 
 合并与校验方法见 [`docs/07_下载与校验.md`](docs/07_下载与校验.md)。
 
