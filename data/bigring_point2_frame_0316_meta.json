@@ -1,0 +1,13 @@
+{
+ "name": "bigring_point2_frame_0316",
+ "description": "点2位置帧（用户 03:16 存帧；车复位后 seq=1）",
+ "user_note": "『我截了，你读一下』——补拍点2",
+ "read_at": "2026-10-11 03:16",
+ "board_state_at_read": "cam_saved_seq=1 (board was power-cycled after 02:43 read)",
+ "content_md5": "c5eb2746f395",
+ "unique_vs_other_frames": true,
+ "mouth_detection": "is_mouth=0",
+ "thr": 231,
+ "white_px": 14964,
+ "format": "grayscale 188x120 raw"
+}
