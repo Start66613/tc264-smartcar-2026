@@ -1,0 +1,18 @@
+{
+ "frames": 666,
+ "interval_ms": 65,
+ "duration_s": 43.3,
+ "firmware": "v135 D3074C9C (flashed 2026-10-11 04:56)",
+ "read_at": "2026-10-11 05:1x",
+ "channels": [
+  "center",
+  "steer",
+  "flags",
+  "gyro",
+  "cl",
+  "cr",
+  "speed",
+  "br2"
+ ],
+ "user_report": "2nd run: big ring completed OK; small ring later -> lost midline. (1st run = v135_run_0504: small ring -> ran backwards)"
+}
