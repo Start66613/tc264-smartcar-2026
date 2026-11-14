@@ -1,0 +1,99 @@
+{
+ "run": "v141 全程+大圆环成功轮",
+ "firmware": "9620E1C0",
+ "frames": 913,
+ "frame_ms": 65,
+ "total_s": 59.3,
+ "car_start_f": 13,
+ "car_start_s": 0.845,
+ "last_motion_f": 757,
+ "stop_f": 758,
+ "driving_s": 48.4,
+ "stop_reason": "VT_FINISH（fault=10）终点斑马线自动停车",
+ "ring": {
+  "arm_f": 42,
+  "turn_f": 59,
+  "loop_f": 69,
+  "straight_f": 127,
+  "done_f": 136,
+  "guard": "车发动后整8.0s（f13+8s=f136.08）",
+  "loop_frames": 58,
+  "full_left_in_ring": 0,
+  "left_coop_fired": [
+   110,
+   111,
+   112,
+   113
+  ],
+  "note": "f109 mid=56 轻左放行(+2.3)；f110-113 mid钉在118(fw) 大左→右转"
+ },
+ "speed": {
+  "avg": 1313,
+  "max": 2772,
+  "cap": 3060
+ },
+ "invalid_line_frames": [
+  47,
+  69,
+  83,
+  94,
+  117,
+  202,
+  203,
+  294,
+  295,
+  327,
+  402,
+  416,
+  428,
+  483,
+  484,
+  592,
+  633,
+  639,
+  733,
+  742,
+  875,
+  889
+ ],
+ "jumps_driving": [
+  [
+   136,
+   57
+  ],
+  [
+   443,
+   40
+  ],
+  [
+   444,
+   63
+  ]
+ ],
+ "near_stops_v300": [
+  [
+   183,
+   186
+  ],
+  [
+   227,
+   228
+  ],
+  [
+   283,
+   288
+  ],
+  [
+   663,
+   666
+  ],
+  [
+   698,
+   701
+  ]
+ ],
+ "near_stops_note": "与v130完赛轮(8处)同类，既有行为；均在模块关闭后(P6)",
+ "full_left_frames_total": 97,
+ "full_right_frames_total": 67,
+ "finish_approach": "f756-757 1212→816 → f758 停(0)"
+}
