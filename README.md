@@ -347,7 +347,7 @@
 
 | 文件 | 大小 | 内容 | SHA256 前 12 |
 |---|---:|---|---|
-| `01_docs_reports.zip` | 13.2 MB | 全部文档 + 61 份报告 + 清单 | `23A37FB3D4B3` |
+| `01_docs_reports.zip` | 13.2 MB | 全部文档 + 61 份报告 + 清单 | `D7DA6506640E` |
 | `02_source_and_toolchain.zip` | 1.0 MB | 当前源码 + 354 个脚本 + 81 个日志 | `F66C04FD70F4` |
 | `03_versions_all.zip.01~06` | 454 MB | **198 个原始版本包**（完整工程） | `838E4297F5DE` |
 | `04_versions_source_extracted.zip` | 10.1 MB | 每版本抽取的纯源码（4243 个文件） | `1A00FC7B05D6` |
