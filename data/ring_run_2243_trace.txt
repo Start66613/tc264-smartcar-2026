@@ -1,0 +1,93 @@
+已记录 78 帧（每帧 ≈59ms；读取前 78 帧）【本表为烧录前读取的原始输出重建；RAM 原始数组已被烧录清掉】
+
+ i | 中线 | 舵令 | 旗 | gyro |  crossL crossR | 备注
+--------------------------------------------------------------
+  0 |   64 |  +0.0 |  1b |     0 |     0     0 | degraded fork hole
+  1 |   64 |  +0.0 |  1b |     0 |     0     0 | degraded fork hole
+  2 |   64 |  +0.0 |  1b |     0 |     0     0 | degraded fork hole
+  3 |   64 |  +0.0 |  1b |     0 |     0     0 | degraded fork hole
+  4 |   64 |  +0.0 |  1b |     0 |     0     0 | degraded fork hole
+  5 |   64 |  +0.0 |  1b |     1 |     0     0 | degraded fork hole
+  6 |   64 |  +0.0 |  1b |     1 |     0     0 | degraded fork hole
+  7 |   64 |  +0.0 |  1b |     4 |     0     0 | degraded fork hole
+  8 |   65 |  -0.1 |  1b |     0 |     0     0 | degraded fork hole
+  9 |   68 |  -0.7 |  1b |    -9 |     0     0 | degraded fork hole
+ 10 |   64 |  +0.0 |  1b |   -13 |     0     0 | degraded fork hole
+ 11 |   64 |  +0.0 |  1b |   -12 |     0     0 | degraded fork hole
+ 12 |   66 |  -0.4 |  1b |    -5 |     0     0 | degraded fork hole
+ 13 |   65 |  -0.1 |  1b |     2 |     0     0 | degraded fork hole
+ 14 |   64 |  +0.0 |  1b |    -3 |     0     0 | degraded fork hole
+ 15 |   65 |  -0.1 |  19 |   -21 |     0     0 | fork hole
+ 16 |   67 |  -0.7 |  5b |     1 |     0     0 | degraded fork hole cornerR
+ 17 |   72 |  -2.2 |  43 |   -71 |     0   250 | degraded cornerR
+ 18 |   74 |  -2.9 |  3 |  -305 |     0   464 | degraded
+ 19 |   76 |  -3.5 |  1b |  -841 |     0   625 | degraded fork hole
+ 20 |   -1 |  -4.1 |  1e | -1106 |     0     0 | 无有效线 degraded all_white fork hole
+ 21 |   83 |  -5.9 |  3b | -1319 |     0   909 | degraded fork hole cornerL
+ 22 |   85 |  -7.4 |  1b | -1718 |     0   888 | degraded fork hole
+ 23 |   85 |  -6.8 |  3 | -2177 |     0   777 | degraded
+ 24 |   83 |  -6.0 |  63 | -2278 |     0   750 | degraded cornerL cornerR
+ 25 |   83 |  -6.3 |  23 | -1600 |     0   777 | degraded cornerL
+ 26 |   87 |  -8.8 |  3 | -1642 |     0   800 | degraded
+ 27 |   89 | -10.0 |  3 | -1875 |     0   818 | degraded
+ 28 |   89 |  -9.6 |  3 | -2181 |     0   900 | degraded
+ 29 |   87 |  -8.3 |  23 | -2031 |     0   900 | degraded cornerL
+ 30 |   86 |  -7.6 |  3 | -1898 |     0   800 | degraded
+ 31 |   85 |  -7.7 |  63 | -1430 |     0   777 | degraded cornerL cornerR
+ 32 |   87 |  -9.1 |  23 | -1489 |     0   800 | degraded cornerL
+ 33 |   87 |  -9.0 |  3 | -1574 |     0   888 | degraded
+ 34 |   87 |  -8.9 |  3 | -1605 |     0  1000 | degraded
+ 35 |   89 | -10.0 |  23 | -1524 |     0  1000 | degraded cornerL
+ 36 |  100 | -10.0 |  23 | -1499 |     0  1000 | degraded cornerL
+ 37 |   96 | -10.0 |  3 | -1435 |     0  1000 | degraded
+ 38 |   91 | -10.0 |  b | -1408 |     0  1000 | degraded fork
+ 39 |   87 |  -9.6 |  1b | -1402 |     0  1000 | degraded fork hole
+ 40 |   51 |  -1.6 |  1b | -1393 |     0     0 | degraded fork hole 跳变36
+ 41 |   73 |  -2.0 |  1b | -1047 |     0   733 | degraded fork hole
+ 42 |   73 |  -2.5 |  1b |  -335 |     0  1000 | degraded fork hole
+ 43 |   53 |  +3.6 |  1b |  -249 |     0  1000 | degraded fork hole
+ 44 |   51 |  +4.6 |  1b |  -142 |     0  1000 | degraded fork hole
+ 45 |   54 |  +2.2 |  1b |   616 |     0   500 | degraded fork hole
+ 46 |   57 |  +1.0 |  1b |   533 |     0     0 | degraded fork hole
+ 47 |   60 |  +0.5 |  1b |   248 |     0     0 | degraded fork hole
+ 48 |   -1 |  +0.5 |  1a |    76 |     0     0 | 无有效线 degraded fork hole
+ 49 |   64 |  +0.0 |  1b |    46 |     0     0 | degraded fork hole
+ 50 |   -1 |  +0.0 |  1a |     0 |     0     0 | 无有效线 degraded fork hole
+ 51 |   10 |  +2.9 |  1b |  -156 |  1000     0 | degraded fork hole 跳变54
+ 52 |    1 | +10.0 |  3 |   -41 |  1000     0 | degraded
+ 53 |    1 | +10.0 |  3 |   359 |  1000     0 | degraded
+ 54 |    1 | +10.0 |  1b |   585 |  1000     0 | degraded fork hole
+ 55 |    1 | +10.0 |  1b |   269 |  1000     0 | degraded fork hole
+ 56 |    1 | +10.0 |  3 |   351 |  1000     0 | degraded
+ 57 |    1 | +10.0 |  3 |   507 |  1000     0 | degraded
+ 58 |    1 | +10.0 |  3 |   726 |  1000     0 | degraded
+ 59 |   -1 | +10.0 |  2 |   753 |  1000     0 | 无有效线 degraded
+ 60 |   37 | +10.0 |  1b |   681 |     0  1000 | degraded fork hole 跳变36
+ 61 |   -1 | +10.0 |  0 |   654 |     0     0 | 无有效线
+ 62 |   -1 | +10.0 |  0 |   631 |     0     0 | 无有效线
+ 63 |   -1 | +10.0 |  0 |   258 |     0     0 | 无有效线
+ 64 |   -1 | +10.0 |  6 |   -31 |     0     0 | 无有效线 degraded all_white
+ 65 |   -1 | +10.0 |  6 |    33 |     0     0 | 无有效线 degraded all_white
+ 66 |   -1 | +10.0 |  6 |    67 |     0     0 | 无有效线 degraded all_white
+ 67 |   40 | +10.0 |  3 |     3 |     0     0 | degraded
+ 68 |   40 |  +0.0 |  3 |    -1 |     0     0 | degraded
+ 69 |   44 |  +0.0 |  3 |   -26 |     0     0 | degraded
+ 70 |   43 |  +0.0 |  3 |     0 |     0     0 | degraded
+ 71 |   43 |  +0.0 |  3 |   -11 |     0     0 | degraded
+ 72 |   44 |  +0.0 |  3 |    -5 |     0     0 | degraded
+ 73 |   44 |  +0.0 |  3 |    20 |     0     0 | degraded
+ 74 |   44 |  +0.0 |  3 |     0 |     0     0 | degraded
+ 75 |   44 |  +0.0 |  3 |     4 |     0     0 | degraded
+ 76 |   44 |  +0.0 |  3 |     3 |     0     0 | degraded
+ 77 |   44 |  +0.0 |  3 |     1 |     0     0 | degraded
+
+舵令范围: -10.0 .. +10.0   中线跳变>=30px: 3 处（最大 54px）
+无有效中线帧: 20..66 共 10 帧
+中线偏左/右出 70..120 的帧: 首 0 末 77 共 44 帧
+
+判读要点（2026-10-10 22:43）：
+- 21-38 帧：满舵右追随（crossR=1000），陀螺持续为负 —— 与右转=负一致。
+- 40-51 帧：中线跳变（87->51->10），线在两支路间跳。
+- 52-58 帧：满舵左 + crossL=1000（线在最左 x=1）——往回跑就是这一段。
+- 52-58 左满舵段陀螺为正（+359..+753）—— 与左转=正一致 → 陀螺符号验证通过。
+- 61-67 帧：丢线（lost/all_white）→ 停车。
