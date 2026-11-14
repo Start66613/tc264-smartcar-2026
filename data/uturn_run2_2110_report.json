@@ -1,0 +1,18 @@
+{
+ "sig": "0x56543130",
+ "ms": 573884,
+ "active": 0,
+ "fault": 1,
+ "phase": 0,
+ "frame_age": 32,
+ "conf": 24,
+ "starts": 1,
+ "updates": 612,
+ "imu": 1,
+ "measured": 20,
+ "model": 24,
+ "otsu": 2,
+ "wp": 45,
+ "clip": 0,
+ "line_trace_count": 87
+}
