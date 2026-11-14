@@ -1,0 +1,12 @@
+v141_fullrun_913_raw.bin 格式（小端；N=913）
+偏移        通道        类型/大小
+0           center      int8  ×913  （屏幕坐标 -1..127；= v->mid*128/188）
+913         steer       int8  ×913  （×0.1 = 角度；正=物理左转）
+1826        flags       uint8 ×913  （bit0 valid/1 degraded/2 all_white/3 fork/4 hole/5 cornerL/6 cornerR/7 FINISH）
+2739        br2         uint8 ×913  （bit0..2 arm/mouth/exit命中；bit3..7 相位 0=OFF..6=DONE）
+3652        speed       uint8 ×913  （平均PWM/12；显示×12 ≈ 0..3060）
+4565        gyro        int16 ×913
+6391        cl          int16 ×913  （crossL）
+8217        cr          int16 ×913  （crossR）
+读法：struct.unpack_from('<913b', data, 0) 等。
+来源：板上 P20.7 记录（v141/9620E1C0），2026-10-11 上午全程+环岛成功轮。
