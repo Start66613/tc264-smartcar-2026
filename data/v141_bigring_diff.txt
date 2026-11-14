@@ -1,0 +1,72 @@
+--- big_ring.c (v134底)
++++ big_ring.c (v141)
+@@ -9,6 +9,12 @@
+  * 搜索（scripts/search_params_v4.py / v5），得到容忍 ±20~30px / ±8行 的参数组合；
+  * 全部变体验证通过、负样本全静默（scripts/test_bigring_rev_detect.c 固化）。
+  *
++ *
++ * v141（2026-10-11，用户方案；从 v134 重新起底）：
++ *   ① 左转协调——环内允许轻微左转；大左转（mid<BR2_LEFT_SOFT_MID）改为右转
++ *      （修 f104-119 满左+10°约1s 的"视觉锁左侧线"事件；用户："大左转时让他右转"）；
++ *   ② 8s 强制关闭保险（同 v138）——开跑后 8s 未 DONE 则强制 DONE。
++ *   改动全部在本模块（big_ring.c/h）；track_core 等环岛外逻辑零改动。
+  * 规则（行段几何，>=16px 白段；行号 y 自上=远 到下=近）：
+  *   点3 武装: y41-56 单段且右缘>=140 且左缘 12..95 行数>=8
+  *             且 y18-31 右缘 85..160 行数>=8
+@@ -109,6 +115,16 @@
+  (void)t;(void)imu_valid;(void)yaw10;
+  if(!enabled){br2_reset(s);return;}
+  if(!running||s->phase==BR2_DONE)return;
++ /* v141 保险（用户方案）：车发动（首个 running 帧）起算——BR2_GUARD_MS 内模块必须关闭（DONE）。
++  * 起点=车发动（用户指定，同 v138 语义）。到点仍未关闭 → 强制进入 DONE：静默、零注入、
++  * 不再武装，与自然跑完状态一致，不影响后续任何巡线逻辑。
++  * （正常一跑约 8s 内自然 DONE → 保险不动作；全程跑若发车到环岛超过 8s，模块会在到环岛前关闭。） */
++ if(!s->guard_run){s->guard_run=1u;s->guard_start=f->stamp;}
++ if((f->stamp-s->guard_start)>=BR2_GUARD_MS){
++  s->guard_closed=1u;
++  enter(s,BR2_DONE,f->stamp);
++  return;
++ }
+  if(f->sequence!=s->seq){
+   s->seq=f->sequence;
+   /* v134 诊断：每帧刷新三个检测器原始输出（供记录通道回读） */
+@@ -155,6 +171,13 @@
+   f->valid=1;f->degraded=1;f->all_white=0;f->measured=20;f->confidence=45;
+   f->special_route=1;f->special_fault=0;
+  }else if(s->phase==BR2_LOOP){
++  /* v141 左转协调：轻微左转放行；大左转（mid<BR2_LEFT_SOFT_MID）改为右转 */
++  if(f->mid>=0&&f->mid<(int)BR2_LEFT_SOFT_MID)f->mid=(int)(94u+BR2_LEFT_FIX_BIAS);
++  if(f->far_mid>=0&&f->far_mid<(int)BR2_LEFT_SOFT_MID)f->far_mid=(int)(94u+BR2_LEFT_FIX_BIAS);
+   f->special_route=1;f->special_fault=0;
++ }else if(s->phase==BR2_TAIL){
++  /* v141 左转协调（出环口同规则）：防"视觉锁左侧线→大左转→往回跑" */
++  if(f->mid>=0&&f->mid<(int)BR2_LEFT_SOFT_MID)f->mid=(int)(94u+BR2_LEFT_FIX_BIAS);
++  if(f->far_mid>=0&&f->far_mid<(int)BR2_LEFT_SOFT_MID)f->far_mid=(int)(94u+BR2_LEFT_FIX_BIAS);
+  }
+ }
+
+--- big_ring.h (v134底)
++++ big_ring.h (v141)
+@@ -11,10 +11,22 @@
+  * v134: 检测器稳健化——标定自三帧+30个平移/亮度变体+8个负样本（scripts/fixtures_bigring_rev），
+  *       容忍 ±20~30px 横向 / ±8行 纵向 的位置偏差（旧版±5px即失效，实车首次测试未触发）。
+  */
++/* v141（2026-10-11，用户方案；从 v134 重新起底，替代 v135"完全禁止左转"）：
++ *   ① 左转协调——环内(LOOP/TAIL)允许轻微左转（mid>=BR2_LEFT_SOFT_MID 放行）；
++ *      大左转（mid<BR2_LEFT_SOFT_MID）改为右转（mid=94+BR2_LEFT_FIX_BIAS）。
++ *      依据：160帧实录 f104-119 满左+10.0°持续约1s（视觉锁左侧线）；用户："大左转时让他右转"。
++ *   ② 8 秒强制关闭保险（同 v138）——车发动（首个 running 帧）后 8s 内模块必须关闭（DONE），到点未关则强制 DONE。
++ *   改动全部限于本模块（big_ring.c/h）；track_core / track_vision 等环岛外逻辑零改动。
++ */
++/* v141 参数 */
++#define BR2_LEFT_SOFT_MID  80u   /* 允许的最左中线（含）：mid>=80 的轻微左转放行；<80 = 大左转 → 右转 */
++#define BR2_LEFT_FIX_BIAS  24u   /* 大左转改为右转的注入偏置：mid = 94+24 = 118 */
++#define BR2_GUARD_MS     8000u   /* 车发动（首个 running 帧）后 8s 内未 DONE → 强制关闭（用户指定起点） */
+ enum {BR2_OFF,BR2_ARMED,BR2_TURN,BR2_LOOP,BR2_STRAIGHT,BR2_TAIL,BR2_DONE};
+ typedef struct {
+  uint32_t phase,seq,hits,last_hit,count_mark2,stamp,hold_until,entered_ms;
+  uint32_t dbg;   /* v134 诊断：bit0 arm命中 bit1 mouth命中 bit2 exit命中（原始检测器输出，每帧刷新） */
++ uint32_t guard_run,guard_start,guard_closed;  /* v141 保险：跑动计时起点/已强制关闭标志 */
+ } BR2State;
+ void br2_reset(BR2State *s);
+ void br2_process(BR2State *s,VTTracker *t,const uint8_t *bin,VTFrame *f,
