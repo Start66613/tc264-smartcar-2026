@@ -1,0 +1,16 @@
+{
+ "frames": 160,
+ "interval_ms": 65,
+ "version_on_board": "v134 (D2ED57B1)",
+ "note": "用户实录：环岛内大左转段 f100-119；模块未自动关闭（10.4s 停在 LOOP）",
+ "columns": [
+  "trace_center",
+  "trace_steer",
+  "trace_flags",
+  "trace_gyro",
+  "trace_cl",
+  "trace_cr",
+  "trace_speed",
+  "trace_br2"
+ ]
+}
