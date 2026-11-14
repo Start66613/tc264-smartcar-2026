@@ -1,0 +1,208 @@
+已记录 200 帧（每帧 ≈59ms；读取前 200 帧）
+
+ i | 中线 | 舵令 | 旗 | gyro |  crossL crossR | 备注
+--------------------------------------------------------------
+  0 |   87 |  +0.0 |  3b |   704 |     0  1000 | degraded fork hole cornerL
+  1 |   75 |  +0.0 |  1b |   591 |     0  1000 | degraded fork hole
+  2 |   70 |  +0.0 |  1b |   749 |     0  1000 | degraded fork hole
+  3 |   85 |  +0.0 |  1b |   856 |     0  1000 | degraded fork hole
+  4 |   74 |  +0.0 |  2b |   901 |     0   687 | degraded fork cornerL
+  5 |   89 |  +0.0 |  b |  1125 |     0  1000 | degraded fork
+  6 |   51 |  +0.0 |  7b |  1421 |     0     0 | degraded fork hole cornerL cornerR 跳变38
+  7 |   60 |  +0.0 |  1b |  1473 |     0     0 | degraded fork hole
+  8 |   57 |  +0.0 |  2b |  1245 |     0     0 | degraded fork cornerL
+  9 |   72 |  +0.0 |  1b |   712 |     0     0 | degraded fork hole
+ 10 |   51 |  +0.0 |  3b |   -43 |     0     0 | degraded fork hole cornerL
+ 11 |   46 |  +0.0 |  7b |  -386 |     0     0 | degraded fork hole cornerL cornerR
+ 12 |   44 |  +0.0 |  5b |  -450 |     0     0 | degraded fork hole cornerR
+ 13 |   42 |  +0.0 |  1b |  -520 |     0     0 | degraded fork hole
+ 14 |   42 |  +0.0 |  3b |  -279 |     0     0 | degraded fork hole cornerL
+ 15 |   48 |  +0.0 |  1b |   116 |     0     0 | degraded fork hole
+ 16 |   49 |  +0.0 |  3b |    -1 |     0     0 | degraded fork hole cornerL
+ 17 |   48 |  +0.0 |  5b |  -343 |     0     0 | degraded fork hole cornerR
+ 18 |   70 |  +0.0 |  1b |  -522 |     0     0 | degraded fork hole
+ 19 |   62 |  +0.0 |  1b |  -803 |     0     0 | degraded fork hole
+ 20 |   59 |  +0.0 |  b |  -830 |     0     0 | degraded fork
+ 21 |   45 |  +0.0 |  1b |  -562 |     0     0 | degraded fork hole
+ 22 |   33 |  +0.0 |  1b |  -378 |  1000     0 | degraded fork hole
+ 23 |   25 |  +0.0 |  1b |    23 |  1000     0 | degraded fork hole
+ 24 |   23 |  +0.0 |  1b |   737 |  1000     0 | degraded fork hole
+ 25 |    1 |  +0.0 |  1b |  1306 |     0     0 | degraded fork hole
+ 26 |   -1 |  +0.0 |  1a |  1566 |     0     0 | 无有效线 degraded fork hole
+ 27 |   44 |  +0.0 |  1b |  1643 |     0     0 | degraded fork hole 跳变43
+ 28 |   45 |  +0.0 |  1b |  1469 |     0     0 | degraded fork hole
+ 29 |   48 |  +0.0 |  1b |  1366 |     0     0 | degraded fork hole
+ 30 |   69 |  +0.0 |  1b |  1504 |     0     0 | degraded fork hole
+ 31 |   68 |  +0.0 |  1b |  1415 |     0     0 | degraded fork hole
+ 32 |   70 |  +0.0 |  1b |  1287 |     0     0 | degraded fork hole
+ 33 |   76 |  +0.0 |  1b |  1289 |     0     0 | degraded fork hole
+ 34 |   78 |  +0.0 |  1b |   985 |     0     0 | degraded fork hole
+ 35 |   76 |  +0.0 |  1b |   317 |     0     0 | degraded fork hole
+ 36 |   68 |  +0.0 |  1b |  -444 |     0     0 | degraded fork hole
+ 37 |   70 |  +0.0 |  19 |  -961 |     0     0 | fork hole
+ 38 |   61 |  +0.0 |  9 |  -995 |     0     0 | fork
+ 39 |   53 |  +0.0 |  19 |  -694 |     0     0 | fork hole
+ 40 |   61 |  +0.0 |  1b |  -415 |     0     0 | degraded fork hole
+ 41 |   59 |  +0.0 |  1b |  -195 |     0     0 | degraded fork hole
+ 42 |   66 |  +0.0 |  1b |   -41 |     0     0 | degraded fork hole
+ 43 |   61 |  +0.0 |  5b |    58 |     0     0 | degraded fork hole cornerR
+ 44 |   62 |  +0.0 |  5b |   142 |     0     0 | degraded fork hole cornerR
+ 45 |   61 |  +0.0 |  1b |   206 |     0     0 | degraded fork hole
+ 46 |   61 |  +0.0 |  1b |   362 |     0     0 | degraded fork hole
+ 47 |   -1 |  +0.0 |  1a |   502 |     0     0 | 无有效线 degraded fork hole
+ 48 |  109 |  +0.0 |  1b |   614 |     0     0 | degraded fork hole 跳变48
+ 49 |   67 |  +0.0 |  1b |   612 |     0     0 | degraded fork hole 跳变42
+ 50 |   71 |  +0.0 |  1b |   468 |     0     0 | degraded fork hole
+ 51 |   74 |  +0.0 |  5b |   304 |     0     0 | degraded fork hole cornerR
+ 52 |   75 |  +0.0 |  1b |   109 |     0     0 | degraded fork hole
+ 53 |   76 |  +0.0 |  1b |    34 |     0     0 | degraded fork hole
+ 54 |   76 |  +0.0 |  5b |    27 |     0     0 | degraded fork hole cornerR
+ 55 |   58 |  +0.0 |  1b |  -209 |     0     0 | degraded fork hole
+ 56 |   65 |  +0.0 |  1b |  -631 |     0     0 | degraded fork hole
+ 57 |  109 |  +0.0 |  1b |  -814 |     0     0 | degraded fork hole 跳变44
+ 58 |   -1 |  +0.0 |  1a |  -752 |     0     0 | 无有效线 degraded fork hole
+ 59 |   59 |  +0.0 |  3b |  -553 |     0     0 | degraded fork hole cornerL 跳变50
+ 60 |   42 |  +0.0 |  5b |  -115 |     0     0 | degraded fork hole cornerR
+ 61 |   72 |  +0.0 |  1b |   140 |     0     0 | degraded fork hole 跳变30
+ 62 |   61 |  +0.0 |  1b |    46 |     0     0 | degraded fork hole
+ 63 |   57 |  +0.0 |  7b |   -52 |     0     0 | degraded fork hole cornerL cornerR
+ 64 |   49 |  +0.0 |  7b |   -37 |     0     0 | degraded fork hole cornerL cornerR
+ 65 |   57 |  +0.0 |  7b |     5 |     0     0 | degraded fork hole cornerL cornerR
+ 66 |   57 |  +0.0 |  7b |     9 |     0     0 | degraded fork hole cornerL cornerR
+ 67 |   57 |  +0.0 |  7b |     5 |     0     0 | degraded fork hole cornerL cornerR
+ 68 |   60 |  +0.0 |  7b |     6 |     0     0 | degraded fork hole cornerL cornerR
+ 69 |   60 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+ 70 |   57 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+ 71 |   52 |  +0.0 |  1b |     8 |     0     0 | degraded fork hole
+ 72 |   55 |  +0.0 |  7b |     7 |     0     0 | degraded fork hole cornerL cornerR
+ 73 |   49 |  +0.0 |  1b |    11 |     0     0 | degraded fork hole
+ 74 |   49 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+ 75 |   -1 |  +0.0 |  1a |     4 |     0     0 | 无有效线 degraded fork hole
+ 76 |   -1 |  +0.0 |  1a |    10 |     0     0 | 无有效线 degraded fork hole
+ 77 |   -1 |  +0.0 |  1a |     5 |     0     0 | 无有效线 degraded fork hole
+ 78 |   -1 |  +0.0 |  1a |     3 |     0     0 | 无有效线 degraded fork hole
+ 79 |   49 |  +0.0 |  5b |     5 |     0     0 | degraded fork hole cornerR
+ 80 |   49 |  +0.0 |  1b |     8 |     0     0 | degraded fork hole
+ 81 |   49 |  +0.0 |  5b |     9 |     0     0 | degraded fork hole cornerR
+ 82 |   49 |  +0.0 |  5b |    10 |     0     0 | degraded fork hole cornerR
+ 83 |   -1 |  +0.0 |  5a |    10 |     0     0 | 无有效线 degraded fork hole cornerR
+ 84 |   -1 |  +0.0 |  1a |     8 |     0     0 | 无有效线 degraded fork hole
+ 85 |   -1 |  +0.0 |  1a |     9 |     0     0 | 无有效线 degraded fork hole
+ 86 |   49 |  +0.0 |  5b |    10 |     0     0 | degraded fork hole cornerR
+ 87 |   45 |  +0.0 |  1b |    11 |     0     0 | degraded fork hole
+ 88 |   -1 |  +0.0 |  1a |    12 |     0     0 | 无有效线 degraded fork hole
+ 89 |   -1 |  +0.0 |  1a |    18 |     0     0 | 无有效线 degraded fork hole
+ 90 |   -1 |  +0.0 |  1a |     7 |     0     0 | 无有效线 degraded fork hole
+ 91 |   44 |  +0.0 |  1b |     2 |     0     0 | degraded fork hole
+ 92 |   61 |  +0.0 |  3b |     8 |     0     0 | degraded fork hole cornerL
+ 93 |   -1 |  +0.0 |  1a |    -6 |     0     0 | 无有效线 degraded fork hole
+ 94 |   -1 |  +0.0 |  1a |  -133 |     0     0 | 无有效线 degraded fork hole
+ 95 |   -1 |  +0.0 |  1a |   -16 |     0     0 | 无有效线 degraded fork hole
+ 96 |   -1 |  +0.0 |  1a |   133 |     0     0 | 无有效线 degraded fork hole
+ 97 |   -1 |  +0.0 |  1a |  -141 |     0     0 | 无有效线 degraded fork hole
+ 98 |   -1 |  +0.0 |  1a |   -24 |     0     0 | 无有效线 degraded fork hole
+ 99 |   94 |  +0.0 |  1b |   251 |     0     0 | degraded fork hole 跳变33
+100 |   -1 |  +0.0 |  1a |    34 |     0     0 | 无有效线 degraded fork hole
+101 |   -1 |  +0.0 |  1a |   -74 |     0     0 | 无有效线 degraded fork hole
+102 |   45 |  +0.0 |  1b |   112 |     0     0 | degraded fork hole 跳变49
+103 |   46 |  +0.0 |  3b |   219 |     0     0 | degraded fork hole cornerL
+104 |   -1 |  +0.0 |  1a |   124 |     0     0 | 无有效线 degraded fork hole
+105 |   46 |  +0.0 |  1b |     5 |     0     0 | degraded fork hole
+106 |   -1 |  +0.0 |  1a |     2 |     0     0 | 无有效线 degraded fork hole
+107 |   -1 |  +0.0 |  1a |    22 |     0     0 | 无有效线 degraded fork hole
+108 |   46 |  +0.0 |  1b |    13 |     0     0 | degraded fork hole
+109 |   93 |  +0.0 |  1b |     9 |     0     0 | degraded fork hole 跳变47
+110 |   46 |  +0.0 |  1b |     9 |     0     0 | degraded fork hole 跳变47
+111 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+112 |   46 |  +0.0 |  5b |     9 |     0     0 | degraded fork hole cornerR
+113 |   46 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+114 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+115 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+116 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+117 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+118 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+119 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+120 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+121 |   46 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+122 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+123 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+124 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+125 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+126 |   46 |  +0.0 |  7b |     7 |     0     0 | degraded fork hole cornerL cornerR
+127 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+128 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+129 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+130 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+131 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+132 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+133 |   46 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+134 |   46 |  +0.0 |  7b |     9 |     0     0 | degraded fork hole cornerL cornerR
+135 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+136 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+137 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+138 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+139 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+140 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+141 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+142 |   46 |  +0.0 |  7b |     6 |     0     0 | degraded fork hole cornerL cornerR
+143 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+144 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+145 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+146 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+147 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+148 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+149 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+150 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+151 |   46 |  +0.0 |  1b |     8 |     0     0 | degraded fork hole
+152 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+153 |   46 |  +0.0 |  5b |     9 |     0     0 | degraded fork hole cornerR
+154 |   46 |  +0.0 |  1b |     8 |     0     0 | degraded fork hole
+155 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+156 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+157 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+158 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+159 |   46 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+160 |   46 |  +0.0 |  3b |     6 |     0     0 | degraded fork hole cornerL
+161 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+162 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+163 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+164 |   46 |  +0.0 |  7b |     7 |     0     0 | degraded fork hole cornerL cornerR
+165 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+166 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+167 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+168 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+169 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+170 |   38 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+171 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+172 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+173 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+174 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+175 |   46 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+176 |   42 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+177 |   42 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+178 |   46 |  +0.0 |  3b |     7 |     0     0 | degraded fork hole cornerL
+179 |   42 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+180 |   46 |  +0.0 |  7b |     7 |     0     0 | degraded fork hole cornerL cornerR
+181 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+182 |   40 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+183 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+184 |   46 |  +0.0 |  5b |     8 |     0     0 | degraded fork hole cornerR
+185 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+186 |   46 |  +0.0 |  7b |     7 |     0     0 | degraded fork hole cornerL cornerR
+187 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+188 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+189 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+190 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+191 |   40 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+192 |   46 |  +0.0 |  7b |     8 |     0     0 | degraded fork hole cornerL cornerR
+193 |   42 |  +0.0 |  1b |     8 |     0     0 | degraded fork hole
+194 |   40 |  +0.0 |  1b |     6 |     0     0 | degraded fork hole
+195 |   46 |  +0.0 |  5b |     5 |     0     0 | degraded fork hole cornerR
+196 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+197 |   40 |  +0.0 |  1b |     7 |     0     0 | degraded fork hole
+198 |   46 |  +0.0 |  5b |     6 |     0     0 | degraded fork hole cornerR
+199 |   46 |  +0.0 |  5b |     7 |     0     0 | degraded fork hole cornerR
+
+舵令范围: +0.0 .. +0.0   中线跳变>=30px: 11 处（最大 50px）
+无有效中线帧: 26..107 共 24 帧
+中线偏出 70..120 的帧: 首 6 末 199 共 153 帧
