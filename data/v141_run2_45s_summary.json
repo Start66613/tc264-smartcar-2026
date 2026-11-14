@@ -1,0 +1,72 @@
+{
+ "run": "v141 第2轮全程+环岛（用户计时器 45.382s）",
+ "firmware": "9620E1C0",
+ "frames": 836,
+ "frame_ms_nominal": 65,
+ "user_timer_s": 45.382,
+ "launch_f": 9,
+ "last_motion_f": 752,
+ "stop_f": 753,
+ "stop_reason": "VT_FINISH 终点斑马线自动停车",
+ "ring": {
+  "arm_f": 43,
+  "mouth_f": 52,
+  "loop_f": 61,
+  "straight_f": 120,
+  "tail_f": 129,
+  "done_f": 130,
+  "guard": "车发动后≈8.0s（与上轮同为保险关闭；本轮在TAIL相位关闭）",
+  "loop_frames": 59,
+  "full_left_in_loop": 0,
+  "left_coop_fired": [
+   103,
+   106,
+   107,
+   108
+  ],
+  "exit_s_curve": "f132-135满左+f139-145满右（出环S几何，普通逻辑处理）"
+ },
+ "vs_run1": {
+  "run1": "913帧，arm42/mouth59/loop69/straight127/DONE136(STRAIGHT相位→保险)",
+  "run2": "836帧，arm43/mouth52/loop61/straight120/TAIL129/DONE130(TAIL相位→保险)",
+  "note": "本轮进环口检出早7帧、出环快6帧；两轮驾驶段样本数几乎相同（745 vs 743）"
+ },
+ "invalid_line_driving": [
+  30,
+  52,
+  111,
+  138,
+  191,
+  192,
+  229,
+  283,
+  285,
+  315,
+  390,
+  404,
+  475,
+  553,
+  626,
+  632,
+  657
+ ],
+ "invalid_line_parked": "58帧（停车后静止，无意义）",
+ "jumps_driving": [
+  [
+   130,
+   59
+  ]
+ ],
+ "near_stops": {
+  "f173_176": 4,
+  "f216_218": 3,
+  "f273_278": 6,
+  "f694_696": 3,
+  "finish": 5
+ },
+ "speed": {
+  "avg": 1285,
+  "peak": 2772,
+  "cap": 3060
+ }
+}
