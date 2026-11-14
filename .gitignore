@@ -1,0 +1,39 @@
+# 构建产物
+Debug/
+Release/
+*.o
+*.d
+*.src
+*.elf
+*.map
+*.mdf
+
+# 临时文件
+tmp/
+.tmp/
+__pycache__/
+*.pyc
+*.pyo
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 大的第三方依赖 / 参考代码（不含在本仓库）
+references/
+tools/
+2.56.0.202303101530/
+*.exe
+*.dll
+
+# 压缩包（原始版本包请见 Releases / manifest）
+# 注：versions/ 里只有抽取出的源码，不含 zip
+*.zip
+!docs/**/*.zip
