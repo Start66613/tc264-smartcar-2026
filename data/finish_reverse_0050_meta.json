@@ -1,0 +1,21 @@
+{
+ "name": "finish_reverse_0050",
+ "direction": "reverse",
+ "result": "FINISHED - car auto-stopped (fault=VT_FINISH)",
+ "samples": 355,
+ "sample_interval_ms_estimated": "~131 (measured CCD 30.6Hz / 4)",
+ "duration_sec_estimated": "~40-47",
+ "date": "2026-10-11 00:50",
+ "firmware": "v129 C70B91A9 (GOLDEN v123 logic + long recording)",
+ "key_findings": [
+  "no backward-run signature: only 1 frame with mid<=25+left lock (transient), vs 6 frames in failed trace",
+  "longest blind stretch frames 76-87 (12 samples, ~1.4s), steering frozen -3.1, recovered",
+  "19 mid jumps >=20px, max 33px, all recovered",
+  "car auto-stopped via zebra finish detection"
+ ],
+ "files": [
+  "finish_reverse_0050_trace.txt",
+  "finish_reverse_0050_trace_raw.bin",
+  "finish_reverse_0050_analysis.md"
+ ]
+}
