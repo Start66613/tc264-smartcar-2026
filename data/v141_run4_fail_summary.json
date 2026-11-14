@@ -1,0 +1,37 @@
+{
+ "run": "v141 第4轮 失败记录（VT_LOST 自停）",
+ "firmware": "9620E1C0",
+ "frames": 576,
+ "frame_ms": 65,
+ "fault_readback": "VT_LOST(3) 丢线停车（车自己停的）",
+ "car_start_f": 10,
+ "stop_f": 524,
+ "stop_after_record_end": "仍在记录至f575",
+ "ring": {
+  "arm_f": 44,
+  "mouth_f": 51,
+  "loop_f": 60,
+  "straight_f": 113,
+  "tail_f": 123,
+  "done_f": 133,
+  "guard": "车发动后整8.0s关闭（f133=f10+123）此时已在TAIL相位——比第2轮多走了10帧TAIL",
+  "internal_blinds": "环内仅4个单帧失线（f70/f107/f112/f129）——历史最干净的一轮",
+  "left_coop_fired": "f98-99 连续2帧 mid=80（=118重写 左转协调生效）"
+ },
+ "failure": {
+  "f455_488": "全白盲2.2s（含fork+hole标志）：转向冻+0.7°/速度552→1728（爬升！）",
+  "f489_493": "短暂找回（mid 60-73, 5帧）",
+  "f494_523": "再盲~2s：转向冻-2.6°/速度600→444爬行",
+  "f524": "VT_LOST停车（lost路径累积25拍≈500ms）",
+  "align_with_success": "同一特征点(≈run2 f471-480)：成功轮在该处减速到~450爬行、1帧失线通过；本轮高速进入全白盲区→飞出→自停"
+ },
+ "invalid_frames": {
+  "driving": 81,
+  "parked": 40
+ },
+ "speed": {
+  "drive_avg": 1281,
+  "peak": 2700,
+  "cap": 3060
+ }
+}
