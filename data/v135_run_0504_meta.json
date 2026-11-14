@@ -1,0 +1,18 @@
+{
+ "frames": 451,
+ "interval_ms": 65,
+ "duration_s": 29.3,
+ "firmware": "v135 D3074C9C (flashed 2026-10-11 04:56)",
+ "read_at": "2026-10-11 05:04",
+ "channels": [
+  "center",
+  "steer",
+  "flags",
+  "gyro",
+  "cl",
+  "cr",
+  "speed",
+  "br2"
+ ],
+ "note": "user asked to save first, discuss later; no analysis performed"
+}
