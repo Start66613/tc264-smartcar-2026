@@ -1,0 +1,7 @@
+{
+ "frames": 219,
+ "interval_ms": 65,
+ "firmware": "v134 D2ED57B1",
+ "key": "entered ring OK; mouth never fired on return; car turned around in-ring at ~f100-125",
+ "phase_log": "arm@49 mouth@51 TURN@52-59 LOOP@60+; exit-det fired f130/131/141; arm-det f142-146 (in-loop, ignored)"
+}
