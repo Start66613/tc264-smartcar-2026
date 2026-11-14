@@ -1,0 +1,14 @@
+{
+ "name": "bigring_reverse_entry_frame_0230",
+ "description": "反向跑·大圆环进环口特征帧（点三位置）",
+ "position_on_map": "红圈区域：大圆环左侧连接直道、②号标记附近（连接转弯标签处）",
+ "user_note": "反向跑，车在该位置进入大圆环状态；此前正向跑入口是点一，反向跑入口是点三",
+ "format": "grayscale 188x120 raw, row-major (same as cam_gray)",
+ "recorded": "2026-10-11 ~02:25 (P20.7 long-press save-frame)",
+ "firmware_at_capture": "v132 510E0A59",
+ "files": [
+  "bigring_reverse_entry_frame_0230.bin",
+  "bigring_reverse_entry_frame_0230_view.png"
+ ],
+ "diagnostic_finding": "existing mouth() detection returns is_mouth=0 for this frame -> reverse entry needs recalibration"
+}
